@@ -1,24 +1,28 @@
 import React from "react";
 import ReactDOM  from "react-dom/client";
-<div id="parent">
-<div id="child">
-    <h1></h1>
-</div>
-</div>
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement(
-    "div",
-    { id: "child1" },
-    React.createElement("h1", { id: "heading" }, "I'm an h1 tag")
-  ),
-  React.createElement(
-    "div",
-    { id: "child2" },
-    React.createElement("h1", { id: "heading" }, "I'm an h1 in child2")
-  ),
-]);
+const name = "Devil";
 
-const heading = React.createElement('h1',{id:"heading"},"Welcome to react");
+function isHeDeveloper(name){
+  // if(name == 'Bhushan'){
+  //   return "Yes"
+  // }
+
+  return ( name == "Bhushan" ? "Yes" : "No")
+
+}
+
+
+const ShowMyName = () => {
+  return <h1>{name == "Devil" ? "Yes" : "No"}</h1>
+};
+console.log(ShowMyName);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+root.render(<ShowMyName/>);
+// root.render(IsPatientDisabled());
+// root.render(<IsPatientDisabled></IsPatientDisabled>)
+
+
+
+{/* <Component /> */}
