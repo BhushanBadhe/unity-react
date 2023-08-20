@@ -4,7 +4,10 @@
   "description": "Basics of react ",
   "main": "App.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "https": "parcel index.html --https"
   },
   "repository": {
     "type": "git",
